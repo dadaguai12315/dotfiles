@@ -82,7 +82,7 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
-
+bindkey '^H' backward-kill-word
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -111,14 +111,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias unsetproxy="unset https_proxy"
-alias setproxy="export https_proxy=http://127.0.0.1:7890"
+alias unsetproxy="unset https_proxy; unset http_proxy; echo '\e[32mHTTP PROXY OFF\e[0m'"
 
 alias cd="z"
 alias ls="lsd"
 alias top="btm"
 alias df="duf"
-alias vim="nvim"
+# alias vim="nvim"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
