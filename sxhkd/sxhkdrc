@@ -96,6 +96,7 @@ super + {_,shift + }{h,j,k,l}
 # focus the next/previous desktop in the current monitor
 super + {comma, period}
     bspc desktop -f {prev,next}.local
+    # bspc desktop -f {prev,next}
 
 # focus the last node/desktop
 super + {Tab,grave}
@@ -223,5 +224,5 @@ XF86Audio{LowerVolume,RaiseVolume,Mute}
 
 # Brightness control
 XF86MonBrightness{Up,Down}
-    brightnessctl s 5%{+,-}
+    ~/.config/scripts/brightness_dunst {up, down}
 # vim: ft=sh tabstop=4

@@ -1,0 +1,2 @@
+# Arch Linux + bspwm + polybar
+

@@ -14,7 +14,7 @@
     foreground:     #e0def4;
     selected:       #3e8fb0;
 
-    font: "Maple Mono SC NF 14";
+    font: "Maple Mono SC NF 15";
 }
 
 /*****----- Main Window -----*****/
@@ -89,7 +89,7 @@ entry {
 listview {
     enabled:                     true;
     columns:                     1;
-    lines:                       6;
+    lines:                       8;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;

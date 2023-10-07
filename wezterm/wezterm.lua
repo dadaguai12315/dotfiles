@@ -100,11 +100,11 @@ return {
 
 	disable_default_key_bindings = true,
 	keys = {
-		{
-			key = "Enter",
-			mods = "SHIFT",
-			action = wezterm.action.SendString("\x1b[13;2u"),
-		},
+		--{
+		--	key = "Enter",
+		--	mods = "SHIFT",
+		--	action = wezterm.action.SendString("\x1b[13;2u"),
+		--},
 		{ key = "c", mods = "CTRL|SHIFT", action = wezterm.action.CopyTo("Clipboard") },
 		{ key = "v", mods = "CTRL|SHIFT", action = wezterm.action.PasteFrom("Clipboard") },
 		{ key = "Tab", mods = "CTRL", action = wezterm.action({ ActivateTabRelative = 1 }) },
