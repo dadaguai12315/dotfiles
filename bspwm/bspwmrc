@@ -41,7 +41,7 @@ xrdb -merge ~/.Xresource &
 sh /etc/profile.d/setproxy.sh &
 
 # enable libinput-gestures
-libinput-gestures-setup start
+libinput-gestures-setup start &
 
 # lauch bar
 sh ~/.config/polybar/launch.sh

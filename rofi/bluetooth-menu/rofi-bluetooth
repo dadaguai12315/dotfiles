@@ -209,7 +209,7 @@ print_status() {
         done
         printf "\n"
     else
-        echo ""
+        echo ""
     fi
 }
 
