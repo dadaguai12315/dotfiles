@@ -10,7 +10,7 @@ if [ $(bspc query --node focused.floating.\!hidden.window.local --nodes | wc -l)
     monitorinfo=$(bspc query --monitor focused --tree)
     monitorwidth=$(echo "$monitorinfo" | cut -d ":" -f18 | cut -d "," -f1)
     monitorheight=$(echo "$monitorinfo" | cut -d ":" -f19 | cut -d "," -f1 | tr -d "}")
-    bspc node -v $(( ($monitorwidth/2) - $floatwinxcoords - ($floatwinwidth/2) )) $(( ($monitorheight/2) - $floatwinycoords - ($floatwinheight/2) ))
+    bspc node -v $(( ($monitorwidth/2) - $floatwinxcoords - ($floatwinwidth/2) )) $(( ($monitorheight/2) - $floatwinycoords - ($floatwinheight/2) + 25)) # 25 is polybar's height
 else
     dunstify -a "bspwm" -u normal --replace=102 "tocenter" "No levatating window is currently focused"
 fi
